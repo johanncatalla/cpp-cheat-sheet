@@ -233,8 +233,8 @@ Rectangle::Rectangle(const std::string &name, const int length, const int width)
 }
 
 // This constructor calls the superclass (Polygon) constructor, but sets the length and width to a constant value
-// The explicit keyword is used to restrict the use of the constructor. See section below for more detail
-explicit Rectangle::Rectangle(const std::string &name) : Polygon(4, name) {
+// We already declared this as explicit in the header file so we don't need to redeclare
+Rectangle::Rectangle(const std::string &name) : Polygon(4, name) {
     this->length = 1;
     this->width = 1;
 }
