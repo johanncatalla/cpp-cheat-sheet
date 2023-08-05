@@ -251,7 +251,8 @@ int Rectangle::Area(void) const {
 
 #include <iostream>
 
-#include "Rectangle.h"
+#include "polygon.cpp"
+#include "rectangle.cpp"
 
 int main(int argc, char *argv[]) {
     Rectangle rectangle = Rectangle("Square", 6, 6);
